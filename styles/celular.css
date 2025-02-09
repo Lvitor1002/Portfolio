@@ -1,0 +1,112 @@
+
+/*tablet max 1020px*/
+
+@media screen and (max-width: 615px){
+     /* ESTILO [GERAL] */
+
+    .flex{ 
+        flex-direction: column;
+    }
+    .topo-conteudo .flex { 
+        flex-direction: column-reverse;
+    }
+    h2.titulo{
+        font-size: 28px;
+        text-align: center;
+    }
+
+   
+
+
+    /* ESTILO DO CABEÇALHO  */
+    .interface {
+        background-color: black;
+    }
+
+    .logo img {
+        display: block;
+        position: absolute;
+        width: 90px;
+        transform: translate(135%, -30%);
+        
+    }
+    
+    
+    .menu-desktop {
+        display: none;
+        padding-top: 9px;
+    }
+
+
+
+
+    /* ESTILO DO CONTEÚDO  */
+    section .topo-conteudo{
+        padding: 20px 8%;
+        
+    }
+    .imagem-lvitor img {
+        width: 230px; /* Defina o tamanho desejado */
+        height: auto; /* Mantém a proporção */
+        padding-bottom: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+    .topo-conteudo h1 {
+        font-size: 25px;
+        line-height: 29px;
+        text-align: center;
+    }
+    section.especialidades{
+        padding: 0 10%;
+    }
+
+    section.sobre{
+        padding: 20px 8%;
+    }
+    
+    .botao-social {
+        display: flex;
+        justify-content: center; /* Alinha os botões no centro */
+        gap: 30px; /* Espaçamento entre os botões */
+    }
+
+
+
+    
+    /* ESTILO DO RODAPÉ  */
+    .linha-rodape {
+        display: flex;
+        justify-content: center; /* Distribui o espaço entre os itens */
+        align-items: center; /* Alinha verticalmente no centro */
+        width: 100%; /* Garantir que ocupe toda a largura disponível */
+    }
+    .logo-rodape {
+        margin: 50px auto; /* Centraliza a logo dentro do seu contêiner */
+    }
+    .linha-rodape-borda {
+        padding: 20px 0;
+        color: rgba(255, 255, 255, 0.5);
+        
+    }
+    .linha-rodape-borda p, a{
+        color: rgba(255, 255, 255, 0.548);
+        text-decoration: none;
+        padding: 10px 0;
+        transition: all 2s;
+    }
+    .linha-rodape-borda a:hover{
+        color: #ff9900;
+        text-decoration: none;
+        padding: 10px 0;
+        transition-duration: 2s;
+    }
+    .linha-rodape-borda i{
+        color: #ff9900;
+    }
+
+
+}
+
+
+https://www.youtube.com/watch?v=gekJwNUaq0E&list=PLaLQ4gJXUd6DP5n1t8r4rwF40ahLgUlMg&index=9

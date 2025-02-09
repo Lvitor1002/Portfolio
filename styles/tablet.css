@@ -1,0 +1,61 @@
+
+/*tablet 900px e 700px*/
+
+@media screen and (max-width: 900px){
+
+
+    /* ESTILO DO CABEÇALHO  */
+
+    .botao-contato{
+        display: none;
+    }    
+
+
+    /* ESTILO DO CONTEÚDO  */
+
+    section.topo-conteudo .flex{
+        align-items: center;
+        justify-content: center;
+        gap: 20px; /*Espaço entre os elementos*/
+    }
+
+    .topo-conteudo h1 {
+        
+        font-size: 40px;
+        line-height: 50px;
+        margin: 0 2%; /*40px em cima e em baixo e 0px dos lados*/
+    }
+    .topo-conteudo .texto-todo-conteudo p {
+        font-size: 1.1em;
+        margin: 80px 2%; /*40px em cima e em baixo e 0px dos lados*/
+    }
+
+
+    section.especialidades .flex{
+        flex-flow: wrap;
+    }
+    
+}
+
+
+@media screen and (max-width: 700px){
+
+    /* ESTILO DO CONTEÚDO  */
+    section.topo-conteudo .flex{
+        gap: 5px; /*Espaço entre os elementos*/
+    }
+    
+    .topo-conteudo h1 {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 1%; /*40px em cima e em baixo e 0px dos lados*/
+    }
+    .topo-conteudo .texto-todo-conteudo p {
+        font-size: 1em;
+        margin: 80px 4%; /*40px em cima e em baixo e 0px dos lados*/
+    }
+    
+}
+    
+
+    
