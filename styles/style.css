@@ -1,0 +1,562 @@
+@charset "UTF-8";
+
+/*
+    CORES:
+
+            CINZA: rgba(0, 0, 0, 0.822);
+            LARANJA ESCURO: #d14403;
+            LARANJA DO L:  #ff5100e1;
+            LARANJA MEDIO: #ff5900cb;
+    
+*/
+
+
+
+/* ESTILO [GERAL] */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Lato", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body{
+    background-color: rgb(0, 0, 0);
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto; /*Centraliza no meio*/
+    background-color: rgba(97, 97, 97, 0.342);
+    border-radius: 50px;
+}
+
+.flex{ /*Container PAI*/
+    display: flex;
+    background-color: rgb(0, 0, 0);
+}
+.botao-contato button{
+    padding: 10px 50px;/*10px em cima e em baixo e 40px dos lados*/
+
+    font-size: 1em;
+    font-weight: 600;
+    background-color: #ff5100;
+    border-radius: 50px;
+    border: 0;
+    cursor: pointer;
+    
+    transition: all 1s;
+}
+.botao-contato button:hover{
+    box-shadow: 0px 0px 11px 0px #ff5100;
+    transition-duration: .5s;
+    transform: scale(1.05);
+}
+h2.titulo{
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    background-color: black;
+    text-align: center;
+    padding: 40px 0;
+}
+h2.titulo span{
+    color: #ff5100e1;
+    
+}
+
+
+
+
+
+/* ESTILO DO CABEÇALHO  */
+
+header{
+    padding: 40px 4%;
+}
+header a {
+    color: rgba(255, 255, 255, 0.534);
+    text-decoration: none;
+
+    display: inline-block; /*Usando para manter block e funcionar no hover*/
+    transition: all 2s;
+}
+header a:hover {
+    color: rgb(255, 255, 255);
+    transform: scale(1.05);
+    transition-duration: .1s;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 50px; /*zero em cima e em baixo e 40px dos lados*/
+}
+header > .interface{ /*Container PAI*/
+    display: flex;
+   
+    align-items: center;
+    justify-content: space-between;
+}
+.logo img {
+    width: 100px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+    border-radius: 50%;
+    border: 2px solid rgb(255, 255, 255);
+
+    transition: all 3s;
+}
+.logo img:hover {
+    box-shadow: 0px 0px 50px 0px #ff5100;
+    transition-duration: 4s;
+}
+
+
+
+
+
+
+/* ESTILO DO CONTEÚDO  */
+
+section.topo-conteudo{
+    padding: 40px 4%;
+}
+section.topo-conteudo .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /*Espaço entre os elementos*/
+}
+.topo-conteudo h1 {
+    color: white;
+    font-size: 50px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-shadow: 5px 5px 40px rgb(0, 0, 0);
+}
+.topo-conteudo .texto-todo-conteudo h1 span{
+    color: #ff5100e1;
+    font-size: 1.8em;
+}
+.topo-conteudo .texto-todo-conteudo p {
+    color: rgba(255, 255, 255, 0.568);
+    font-size: 1.2em;
+    line-height: 28px;
+    margin: 80px 0; /*40px em cima e em baixo e 0px dos lados*/
+    text-align: justify;
+    text-indent: 23px;
+}
+
+.imagem-lvitor img {
+    width: 300px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+
+    position: relative; /* Para o funcionamento do [FLUTUAR] */
+    animation: flutuar
+               2s         /* 2s de duração da animação */
+               ease-in-out/* início e fim suave, rápido no centro*/
+               infinite   /* Mantém em loop */
+               alternate; /* Mantém alternando - ajuda na suavidade */
+    
+    transition: 1s;
+} 
+.imagem-lvitor img:hover {
+    transform: scale(1.08);
+}
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 35px;
+    }
+}
+
+/* -----------------------------------------  */
+section.especialidades{
+    padding: 85px 4%;
+}
+section.especialidades .flex{
+    gap: 60px;
+}
+.especialidades .especialidades-box {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    border-radius: 50px;
+    transition: all 2s;
+   
+}
+.especialidades .especialidades-box:hover {
+    box-shadow: 0px 0px 16px -5px rgb(240, 144, 0);
+    transform: scale(1.05);
+    transition-duration: .5s;
+}
+.especialidades .especialidades-box img {
+    width: 100px;
+    text-align: center;
+    height: auto;
+    border-radius: 50px;
+    filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(-20deg); /*inverte o fundo*/
+
+    transition: all 1s;
+    
+}
+.especialidades .especialidades-box img#js {
+    width: 80px;
+    height: auto;
+}
+
+
+.especialidades .especialidades-box img:hover{
+    transition-duration: 1s;
+}
+.especialidades .especialidades-box p{
+    text-align: justify;
+    line-height: 25px;
+    
+}
+
+.especialidades .especialidades-box h3{
+    font-size: 1.8em;
+    font-weight: bolder;
+    color:#ff5100;
+    margin: 15px 0;
+}
+
+/* -----------------------------------------  */
+section.sobre{
+    padding: 95px 4%;
+}
+
+.sobre .img-sobre img {
+    width: 250px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+    border-radius: 45% 0 82%;
+    
+
+
+    position: relative; /* Para o funcionamento do [FLUTUAR] */
+    animation: flutuar
+               5s         /* 2s de duração da animação */
+               ease-in-out/* início e fim suave, rápido no centro*/
+               infinite   /* Mantém em loop */
+               alternate; /* Mantém alternando - ajuda na suavidade */
+
+    transition: all 1s;
+} 
+
+.sobre .img-sobre img:hover {
+    transform: scale(1.08);
+}
+
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 40px;
+    }
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .texto-sobre{
+    color: white;
+}
+.sobre .texto-sobre h2{
+    margin-bottom: 30px;
+    line-height: 40px;
+}
+.sobre .texto-sobre h2 span{
+    display: block; /*Linha pulou para baixo*/
+}
+.sobre .texto-sobre p {
+    color: rgba(255, 255, 255, 0.37);
+    text-indent: 20px;
+    text-align: justify;
+    line-height: 25px;
+
+    transition: all 3s;
+}
+.sobre .texto-sobre p:hover {
+    color: rgb(255, 255, 255);
+    transition-duration: .5s;
+}
+.sobre .texto-sobre .botao-social button{
+    cursor: pointer;
+    color: #ff510070;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 3em;
+    padding: 5% 0;
+    margin: 0 8px;
+    transition: all 30s;
+    
+}
+.sobre .texto-sobre .botao-social button#linkedin:hover{
+    color: #0e76a8;
+    transform: scale(1.02);
+    transition-duration: 1s;
+}
+.sobre .texto-sobre .botao-social button#github:hover{
+    color: white;
+    transform: scale(1.08);
+    transition-duration: 1s;
+}
+.sobre .texto-sobre .botao-social button#youtube:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.09);
+    transition-duration: 1s;
+}
+
+/* -----------------------------------------  */
+
+section.portfolio{
+    padding: 50px 4%;
+    box-shadow: 0px -20px 351px 70px rgb(255 255 255 / 8%);
+    
+}
+section.portfolio .flex{
+    /*gap: 80px;*/ justify-content: space-evenly;
+    flex-flow: wrap; /*Para quebrar na linha de baixo*/
+    
+}
+
+.imagem-portfolio{
+    width: 280px;
+    height: 400px;
+    background-size: cover;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 5% 0;
+    background-color: #000000;
+    position: relative;
+
+    background-position: 100% 0%; /*100% na horizontal e 0% na vertical*/
+    transition: all 2s;
+}
+
+.imagem-portfolio:hover{
+    background-position: 100% 100%; /*100% na horizontal e 100% na vertical*/
+    transition-duration: 15s;
+}
+
+#meu{
+    background-position: center;
+    background-size: contain; /* Garante que a imagem não seja cortada */
+    background-repeat: no-repeat; 
+    text-align: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0; /*Para ficar invisível*/
+    transition: all 1s;
+
+}
+.overlay:hover{
+    background-color: rgba(0, 0, 0, 0.521);
+    color: white;
+    opacity: 1; /*Para ficar visível*/
+}
+
+/* -----------------------------------------  */
+
+section.formulario{
+    padding: 9.5% 4%;
+    
+}
+section.formulario .interface{
+    background-color: #000000;
+}
+form{
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+    
+    
+}
+
+form input{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 0; /* tira o contorno */
+    outline: none; /* tira o contorno */
+    cursor: pointer;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+    color: white;
+    
+}
+form input::placeholder{
+    color: rgba(255, 255, 255, 0.644);
+   
+   font-weight: bold;
+}
+
+form input, form textarea{
+    width: 100%;
+    color: rgba(255, 255, 255, 0.644);
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 0; /* tira o contorno */
+    outline: none; /* tira o contorno */
+    cursor: pointer;
+    padding: 20px 15px;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+form input, form textarea::placeholder{
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: bold;
+    
+}
+form textarea#idtextbox {
+    resize: none; /* Para a caixa de texo não redimensionar */
+    height: 150px;
+}
+
+form .botao-enviar{
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .botao-enviar input{
+    width: 120px;
+    background-color: #ff5100;
+    color: #000000;
+    font-weight: 600;
+    transition: all 2s;
+}
+form .botao-enviar input:hover{
+    transition-duration: .5s;
+    transform: scale(1.08);
+}
+
+
+
+
+/* ESTILO DO RODAPÉ  */
+
+footer{
+    padding: 40px 4%;
+    box-shadow: 0px -20px 351px 70px rgb(255 255 255 / 8%);
+}
+footer .interface{
+    background-color: #000000;
+}
+.logo-rodape img {
+    width: 85px; /* Defina o tamanho desejado */
+    height: auto; /* Mantém a proporção */
+}
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .linha-rodape{
+    padding: 30px 0; /* Apenas uma linha no estilo */
+}
+footer .linha-rodape#borda{ /* Apenas uma linha no estilo */
+    border-top: 2px solid #ff5100;
+}
+
+footer .botao-social button{
+    cursor: pointer;
+    color: #ff510070;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 3em;
+    padding: 5% 0;
+    margin: 0 8px;
+    transition: all 10s;
+    
+}
+footer .botao-social button#linkedin:hover{
+    color: #0e76a8;
+    transform: scale(1.02);
+    transition-duration: 1s;
+}
+footer .botao-social button#github:hover{
+    color: white;
+    transform: scale(1.08);
+    transition-duration: 1s;
+}
+footer .botao-social button#youtube:hover{
+    color: rgb(255, 0, 0);
+    transform: scale(1.09);
+    transition-duration: 1s;
+}
+footer .linha-rodape p i{
+    color: #ff9900;
+    font-size: 25px;
+}
+
+footer .linha-rodape p a{
+    color: #ffffffa4;
+    position: relative;
+    bottom: 3px;
+    padding: 0 4px;
+    text-decoration: none;
+    font-size: 20px;
+    transition: all 1s;
+}
+footer .linha-rodape p a:hover{
+    text-shadow: 0px 0px 25px #ff9900;
+    transition-duration: 1s;
+}
+.logo-rodape img {
+    cursor: pointer;
+    transition: all 2s;
+}
+.logo-rodape img:hover{
+    transform: scale(1.10);
+    transition-duration: 1s;
+}
+
+.linha-rodape p#copyright {
+    color: rgba(255, 255, 255, 0.459);
+    text-align: right;
+    font-size: 20px;
+    position: relative;
+    top: 28px;
+    transition: all 1s;
+}
+.linha-rodape p#copyright:hover{
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;
+}
+.linha-rodape p#copyright a {
+    color: white;
+    font-size: 20px;    
+    position: relative;
+    top: -1px;
+    color: rgba(255, 255, 255, 0.459);
+}
+.linha-rodape p#copyright a:hover {
+    color: #ff9900;
+    font-size: 23px;
+}
