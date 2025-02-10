@@ -1,12 +1,12 @@
 
 /*tablet 900px e 700px*/
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
 
 
     /* ESTILO DO CABEÇALHO  */
 
-    .botao-contato{
+    .botao-contato#botaofixo{
         display: none;
     }    
 
@@ -20,7 +20,6 @@
     }
 
     .topo-conteudo h1 {
-        
         font-size: 40px;
         line-height: 50px;
         margin: 0 2%; /*40px em cima e em baixo e 0px dos lados*/

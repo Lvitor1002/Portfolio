@@ -12,14 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link rel="shortcut icon" href="images/icon_L.png" type="image/x-icon" >
+
+    <!--  Menu Para Mobile -->
+    <script src="menu.js" defer></script>
+
 </head>
 <body>
 
     <!--                                    CABEÇALHO                                           -->
     <header>
-        <div class="interface">
-            <div class="logo"> 
+        <div class="interface" id="logo-cabecalho-centro-celular">
+
+            <div class="logo" id="logo-cabecalho-centro-celular"> 
                 <a href="#"><img src="images/imagem_L.png" alt="Logo Luiz Vitor"></a>
             </div><!-- FIM | logo -->
         
@@ -31,10 +35,10 @@
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#portfolio">Projetos</a></li>
                 </ul>
-            </nav> <!-- FIM | menu-desktop -->
+            </nav> <!-- FIM | menu-desktop 1 -->
             
 
-            <div class="botao-contato">
+            <div class="botao-contato" id="botaofixo">
                 <a href="#formulario"><button>Contato</button></a>
             </div><!-- FIM | botao-contato -->
 
@@ -53,7 +57,7 @@
                         <h1>Transformando ideias em código, e código em soluções<span>.</span></h1>
                         <p>Cada grande projeto começa com uma ideia, e eu a transformo em realidade através do código. Com criatividade, elegância e precisão, desenvolvo soluções eficientes para desafios complexos. Minha paixão é criar experiências digitais funcionais em vivências extraordinárias reais. Cada linha de código é um passo rumo à inovação.</p>
                         
-                        <div class="botao-contato">
+                        <div class="botao-contato" >
                             <a href=" https://wa.me/14988352470"><button>Contato Direto</button></a>
                         </div><!-- FIM | botao-contato - usando o mesmo novamente-->
                     </div><!-- FIM | texto-todo-conteudo -->
@@ -220,6 +224,8 @@
         document.querySelector(".logo-rodape").addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
+
+        
     </script>
 </body>
 </html>

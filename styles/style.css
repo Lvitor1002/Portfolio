@@ -135,7 +135,7 @@ section.topo-conteudo .flex{
     font-size: 50px;
     font-weight: bolder;
     text-transform: uppercase;
-    line-height: 40px;
+    line-height: 50px;
     text-shadow: 5px 5px 40px rgb(0, 0, 0);
 }
 .topo-conteudo .texto-todo-conteudo h1 span{
@@ -176,7 +176,6 @@ section.topo-conteudo .flex{
     }
 }
 
-/* -----------------------------------------  */
 section.especialidades{
     padding: 85px 4%;
 }

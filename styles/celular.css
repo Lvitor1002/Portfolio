@@ -15,29 +15,40 @@
         text-align: center;
     }
 
+    
+
    
 
 
     /* ESTILO DO CABEÇALHO  */
-    .interface {
-        background-color: black;
+
+    .interface#logo-cabecalho-centro-celular {
+        background-color: rgb(0, 0, 0);
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Centraliza horizontalmente */
+        align-items: center; /* Centraliza verticalmente */
     }
 
-    .logo img {
+    .logo#logo-cabecalho-centro-celular {
+        display: flex;              /* Centralizar */
+        justify-content: center;    /* Centralizar */
+        align-items: center;        /* Centralizar */
+        
+    }
+    .logo#logo-cabecalho-centro-celular img {
+        width: 85px;
         display: block;
-        position: absolute;
-        width: 90px;
-        transform: translate(135%, -30%);
         
     }
     
-    
     .menu-desktop {
-        display: none;
-        padding-top: 9px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 105px;
     }
-
-
+    
 
 
     /* ESTILO DO CONTEÚDO  */
@@ -45,10 +56,14 @@
         padding: 20px 8%;
         
     }
+    .botao-contato{
+        display: flex;
+        justify-content: center;
+    }
     .imagem-lvitor img {
         width: 230px; /* Defina o tamanho desejado */
         height: auto; /* Mantém a proporção */
-        padding-bottom: 50px;
+        padding-bottom: 55px;
         justify-content: center;
         text-align: center;
     }
@@ -109,4 +124,3 @@
 }
 
 
-https://www.youtube.com/watch?v=gekJwNUaq0E&list=PLaLQ4gJXUd6DP5n1t8r4rwF40ahLgUlMg&index=9
