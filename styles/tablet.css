@@ -8,7 +8,10 @@
 
     .botao-contato#botaofixo{
         display: none;
-    }    
+    } 
+    #contato{
+        display: block;
+    }   
 
 
     /* ESTILO DO CONTEÚDO  */
