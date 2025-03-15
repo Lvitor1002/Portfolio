@@ -15,7 +15,7 @@ voltarVisibilidade.reveal('.efeito-scroll-texto-topo2',{
 })
 voltarVisibilidade.reveal('.efeito-scroll-texto-topo3',{
     duration:2000,
-    distance:'200px',
+    distance:'50px',
     delay: 800,
     origin:'left'
 })
@@ -25,7 +25,7 @@ voltarVisibilidade.reveal('.efeito-scroll-texto-topo3',{
 voltarVisibilidade.reveal('.efeito-scroll-img-topo',{
     duration:2000,
     delay: 1300,
-    distance:'150px',
+    distance:'50px',
     origin:'right'
 
     
@@ -76,12 +76,12 @@ voltarVisibilidade.reveal('.especialidades-scroll222',{
 //--------------------MUITO PRAZER. LUIZ VITOR.-------------------------
 voltarVisibilidade.reveal('.scroll-img-sobre',{
     duration:2000,
-    distance:'200px',
+    distance:'50px',
     origin:'left'
 })
 voltarVisibilidade.reveal('.scroll-titulo',{
     duration:2000,
-    distance:'200px',
+    distance:'90px',
     delay: 300,
     origin:'right'
 })
@@ -105,7 +105,7 @@ voltarVisibilidade.reveal('.scroll-a3',{
 
 voltarVisibilidade.reveal('.scroll-prog',{
     duration:2000,
-    distance:'100px',
+    distance:'90px',
     origin: 'bottom',
     delay: 100
     
@@ -121,30 +121,30 @@ voltarVisibilidade.reveal('.scroll-titulo-form',{
 
 voltarVisibilidade.reveal('.scroll-input1',{
     duration:2000,
-    distance:'300px',
+    distance:'90px',
     origin: 'right',
 })
 voltarVisibilidade.reveal('.scroll-input2',{
     duration:2000,
-    distance:'300px',
+    distance:'90px',
     origin: 'left',
     delay: 200
 })
 voltarVisibilidade.reveal('.scroll-input3',{
     duration:2000,
-    distance:'300px',
+    distance:'90px',
     origin: 'right',
     delay: 400
 })
 voltarVisibilidade.reveal('.scroll-input4',{
     duration:2000,
-    distance:'300px',
+    distance:'90px',
     origin: 'left',
     delay: 600
 })
 voltarVisibilidade.reveal('.scroll-input5',{
     duration:2000,
-    distance:'300px',
+    distance:'90px',
     origin: 'bottom',
     delay: 800
 })
@@ -152,6 +152,6 @@ voltarVisibilidade.reveal('.scroll-input5',{
 //------------ RODAPÉ ---------------------
 voltarVisibilidade.reveal('.scroll-email',{
     duration:2000,
-    distance:'100px',
+    distance:'50px',
     origin: 'left',
 })
