@@ -76,12 +76,12 @@ voltarVisibilidade.reveal('.especialidades-scroll222',{
 //--------------------MUITO PRAZER. LUIZ VITOR.-------------------------
 voltarVisibilidade.reveal('.scroll-img-sobre',{
     duration:2000,
-    distance:'400px',
+    distance:'200px',
     origin:'left'
 })
 voltarVisibilidade.reveal('.scroll-titulo',{
     duration:2000,
-    distance:'400px',
+    distance:'200px',
     delay: 300,
     origin:'right'
 })
@@ -121,24 +121,24 @@ voltarVisibilidade.reveal('.scroll-titulo-form',{
 
 voltarVisibilidade.reveal('.scroll-input1',{
     duration:2000,
-    distance:'500px',
+    distance:'300px',
     origin: 'right',
 })
 voltarVisibilidade.reveal('.scroll-input2',{
     duration:2000,
-    distance:'500px',
+    distance:'300px',
     origin: 'left',
     delay: 200
 })
 voltarVisibilidade.reveal('.scroll-input3',{
     duration:2000,
-    distance:'500px',
+    distance:'300px',
     origin: 'right',
     delay: 400
 })
 voltarVisibilidade.reveal('.scroll-input4',{
     duration:2000,
-    distance:'500px',
+    distance:'300px',
     origin: 'left',
     delay: 600
 })
@@ -152,6 +152,6 @@ voltarVisibilidade.reveal('.scroll-input5',{
 //------------ RODAPÉ ---------------------
 voltarVisibilidade.reveal('.scroll-email',{
     duration:2000,
-    distance:'1000px',
+    distance:'100px',
     origin: 'left',
 })
