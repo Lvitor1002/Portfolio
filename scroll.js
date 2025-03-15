@@ -17,7 +17,7 @@ voltarVisibilidade.reveal('.efeito-scroll-texto-topo3',{
     duration:2000,
     distance:'50px',
     delay: 800,
-    origin:'left'
+    origin:'bottom'
 })
 
 //--------------------------------------------------------------
@@ -25,9 +25,6 @@ voltarVisibilidade.reveal('.efeito-scroll-texto-topo3',{
 voltarVisibilidade.reveal('.efeito-scroll-img-topo',{
     duration:2000,
     delay: 1300,
-    distance:'50px',
-    origin:'right'
-
     
 })
 
@@ -76,8 +73,8 @@ voltarVisibilidade.reveal('.especialidades-scroll222',{
 //--------------------MUITO PRAZER. LUIZ VITOR.-------------------------
 voltarVisibilidade.reveal('.scroll-img-sobre',{
     duration:2000,
-    distance:'50px',
-    origin:'left'
+    distance:'90px',
+    origin:'top'
 })
 voltarVisibilidade.reveal('.scroll-titulo',{
     duration:2000,
@@ -153,5 +150,5 @@ voltarVisibilidade.reveal('.scroll-input5',{
 voltarVisibilidade.reveal('.scroll-email',{
     duration:2000,
     distance:'50px',
-    origin: 'left',
+    origin: 'top',
 })
