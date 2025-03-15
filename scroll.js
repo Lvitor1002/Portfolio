@@ -74,7 +74,7 @@ voltarVisibilidade.reveal('.especialidades-scroll222',{
 voltarVisibilidade.reveal('.scroll-img-sobre',{
     duration:2000,
     distance:'90px',
-    origin:'top'
+    origin:'bottom'
 })
 voltarVisibilidade.reveal('.scroll-titulo',{
     duration:2000,
