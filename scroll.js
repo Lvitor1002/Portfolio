@@ -60,12 +60,12 @@ voltarVisibilidade.reveal('.especialidades-scroll22',{
 voltarVisibilidade.reveal('.especialidades-scroll111',{
     duration:2000,
     distance:'90px',
-    delay:1500
+    delay:1100
 })
 voltarVisibilidade.reveal('.especialidades-scroll222',{
     duration:2000,
     distance:'90px',
-    delay: 2000,
+    delay: 1500,
     
 })
 
