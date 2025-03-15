@@ -13,8 +13,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <!--  Menu Para Mobile -->
-    <script src="menu.js" defer></script>
+    <!--Rolagem scroll-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scroll.js" defer></script><!--Defer: atrasa o carregamento-->
+    
 
 </head>
 <body>
@@ -54,16 +56,16 @@
             <div class="interface">
                 <div class="flex"><!-- Container PAI -->
 
-                    <div class="texto-todo-conteudo"><!--Lado esquerdo do conteúdo - Textos -->
-                        <h1>Transformando ideias em código, e código em soluções<span>.</span></h1>
-                        <p>Cada grande projeto começa com uma ideia, e eu a transformo em realidade através do código. Com criatividade, elegância e precisão, desenvolvo soluções eficientes para desafios complexos. Minha paixão é criar experiências digitais funcionais em vivências extraordinárias reais. Cada linha de código é um passo rumo à inovação.</p>
+                    <div class="texto-todo-conteudo" ><!--Lado esquerdo do conteúdo - Textos -->
+                        <h1 class="efeito-scroll-texto-topo">Transformando ideias em código, e código em soluções<span>.</span></h1>
+                        <p class="efeito-scroll-texto-topo2">Cada grande projeto começa com uma ideia, e eu a transformo em realidade através do código. Com criatividade, elegância e precisão, desenvolvo soluções eficientes para desafios complexos. Minha paixão é criar experiências digitais funcionais em vivências extraordinárias reais. Cada linha de código é um passo rumo à inovação.</p>
                         
-                        <div class="botao-contato" >
+                        <div class="botao-contato efeito-scroll-texto-topo3" >
                             <a href=" https://wa.me/14988352470"><button>Contato Direto</button></a>
                         </div><!-- FIM | botao-contato - usando o mesmo novamente-->
                     </div><!-- FIM | texto-todo-conteudo -->
 
-                    <div class="imagem-lvitor"><!--Lado direito do conteúdo - Imagem do Autor -->
+                    <div class="imagem-lvitor efeito-scroll-img-topo"><!--Lado direito do conteúdo - Imagem do Autor -->
                         <img src="images/lvitor.png" alt="Retrato de Luiz Vitor">
                     </div><!-- FIM | imagem-lvitor -->
 
@@ -76,24 +78,24 @@
                 <h2 class="titulo">Minhas <span>especialidades.</span></h2>
                 <div class="flex"><!-- Container PAI -->
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box ">
                         <img src="images/sharp_c_icon_213594 (1).png" alt="logo" >
-                        <h3>Linguagem de Programação C#</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque adipisci nesciunt? Repudiandae blanditiis beatae dolorem hic rem omnis minima obcaecati accusantium possimus architecto? Laudantium commodi obcaecati laboriosam illo explicabo?</p>
+                        <h3 class="especialidades-scroll1">Linguagem de Programação C#</h3>
+                        <p class="especialidades-scroll2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque adipisci nesciunt? Repudiandae blanditiis beatae dolorem hic rem omnis minima obcaecati accusantium possimus architecto? Laudantium commodi obcaecati laboriosam illo explicabo?</p>
                     </div><!-- FIM | especialidades-box -->
 
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box ">
                         <img src="images/js.png" alt="logo" id="js">
-                        <h3>Linguagem de Programação JavaScript</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque adipisci nesciunt? Repudiandae blanditiis beatae dolorem hic rem omnis minima obcaecati accusantium possimus architecto? Laudantium commodi obcaecati laboriosam illo explicabo?</p>
+                        <h3 class="especialidades-scroll11">Linguagem de Programação JavaScript</h3>
+                        <p class="especialidades-scroll22">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque adipisci nesciunt? Repudiandae blanditiis beatae dolorem hic rem omnis minima obcaecati accusantium possimus architecto? Laudantium commodi obcaecati laboriosam illo explicabo?</p>
                     </div><!-- FIM | especialidades-box -->
 
 
-                    <div class="especialidades-box">
+                    <div class="especialidades-box ">
                         <img src="images/sql.png" alt="logo">
-                        <h3>Banco de Dados</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque adipisci nesciunt? Repudiandae blanditiis beatae dolorem hic rem omnis minima obcaecati accusantium possimus architecto? Laudantium commodi obcaecati laboriosam illo explicabo?</p>
+                        <h3 class="especialidades-scroll111">Banco de Dados</h3>
+                        <p class="especialidades-scroll222">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur doloremque adipisci nesciunt? Repudiandae blanditiis beatae dolorem hic rem omnis minima obcaecati accusantium possimus architecto? Laudantium commodi obcaecati laboriosam illo explicabo?</p>
                     </div><!-- FIM | especialidades-box -->
 
                 </div><!-- FIM | flex -->
@@ -103,18 +105,18 @@
         <section class="sobre" id="sobre">
             <div class="interface">
                 <div class="flex">
-                    <div class="img-sobre">
+                    <div class="img-sobre scroll-img-sobre">
                         <img src="images/imagem-formatura.jpg" alt="imagem sobre lvitor">
                     </div><!-- FIM | img-sobre -->
 
-                    <div class="texto-sobre">
-                        <h2 class="titulo">MUITO PRAZER. <span>LUIZ VITOR.</span></h2>
-                        <p>"Desenvolvedor de Software formado em Ciência da Computação, com experiência em SQL (Oracle PL e MySQL) e sólidos conhecimentos em back-end com C# e Python. Além disso, domino tecnologias front-end como HTML, CSS e JavaScript, unindo eficiência e versatilidade no desenvolvimento de soluções completas."</p>
+                    <div class="texto-sobre ">
+                        <h2 class="titulo scroll-titulo">MUITO PRAZER. <span>LUIZ VITOR.</span></h2>
+                        <p class="scroll-texto">"Desenvolvedor de Software formado em Ciência da Computação, com experiência em SQL (Oracle PL e MySQL) e sólidos conhecimentos em back-end com C# e Python. Além disso, domino tecnologias front-end como HTML, CSS e JavaScript, unindo eficiência e versatilidade no desenvolvimento de soluções completas."</p>
 
-                        <div class="botao-social">
-                            <a href="https://www.linkedin.com/in/lvitor1001/" target="_blank"><button id="linkedin"><i class="bi bi-linkedin"></i></i></button></a>
-                            <a href="https://github.com/Lvitor1002?tab=repositories" target="_blank"><button id="github"><i class="bi bi-github"></i></button></a>
-                            <a href="https://www.youtube.com/@Lvitor1001" target="_blank"><button id="youtube"><i class="bi bi-youtube"></i></button></a>
+                        <div class="botao-social ">
+                            <a href="https://www.linkedin.com/in/lvitor1001/" target="_blank"><button id="linkedin"><i class="bi bi-linkedin scroll-a1"></i></i></button></a>
+                            <a href="https://github.com/Lvitor1002?tab=repositories" target="_blank"><button id="github"><i class="bi bi-github scroll-a2"></i></button></a>
+                            <a href="https://www.youtube.com/@Lvitor1001" target="_blank"><button id="youtube" ><i class="bi bi-youtube scroll-a3"></i></button></a>
                         </div>
                     </div><!-- FIM | texto-sobre -->
                 </div><!-- FIM | flex -->
@@ -125,37 +127,37 @@
             <div class="interface">
                 <h2 class="titulo">MEUS <span>PROJETOS.</span></h2>
                 <div class="flex">
-                    <a href="https://tela-login-eosin.vercel.app" target="_blank">
+                    <a href="https://tela-login-eosin.vercel.app" target="_blank" class="scroll-prog">
                         <div class="imagem-portfolio" style="background-image: url(images/pro1.png);">
                             <div class="overlay">Tela de Login</div>
                         </div>
                     </a>
 
-                    <a href="https://cordel-moderno-pied.vercel.app" target="_blank">
+                    <a href="https://cordel-moderno-pied.vercel.app" target="_blank" class="scroll-prog">
                         <div class="imagem-portfolio" style="background-image: url(images/cordel.jpg);">
                             <div class="overlay">CORDEL MODERNO</div>
                     </div>
                     </a>
 
-                    <a href="https://site-iphone-five.vercel.app" target="_blank">
+                    <a href="https://site-iphone-five.vercel.app" target="_blank" class="scroll-prog">
                         <div class="imagem-portfolio" style="background-image: url(images/pro3.png);">
                             <div class="overlay">Mini Iphone</div>
                     </div>
                     </a>
 
-                    <a href="https://site-html-css-iota.vercel.app/" target="_blank">
+                    <a href="https://site-html-css-iota.vercel.app/" target="_blank" class="scroll-prog">
                         <div class="imagem-portfolio"  style="background-image: url(images/droid.jpg);">
                             <div class="overlay">Página Droid</div>
                         </div>
                     </a>
 
-                    <a href="https://novo-livid.vercel.app/" target="_blank">
+                    <a href="https://novo-livid.vercel.app/" target="_blank" class="scroll-prog">
                         <div class="imagem-portfolio" style="background-image: url(images/tcc.jpg);">
                             <div class="overlay">TELA DE LOGIN 2</div>
                     </div>
                     </a>
                     
-                    <a href="https://github.com/Lvitor1002/Portfolio.git" target="_blank">
+                    <a href="https://github.com/Lvitor1002/Portfolio.git" target="_blank" class="scroll-prog">
                         <div class="imagem-portfolio" id="meu" style="background-image: url(images/imagem_L.png);">
                             <div class="overlay">CÓDIGO FONTE DESTE PROJETO</div>
                     </div>
@@ -167,19 +169,19 @@
 
         <section class="formulario" id="formulario">
             <div class="interface">
-                <h2 class="titulo">Seu contato é importante. <span>Vamos conversar?</span></h2>
+                <h2 class="titulo scroll-titulo-form">Seu contato é importante. <span>Vamos conversar?</span></h2>
              
                 <form class="form" action="https://formspree.io/f/mldgwbjr" method="POST">
-                    <input type="text" name="nome" id="idnome" placeholder="Seu nome:" required>
+                    <input type="text" name="nome" id="idnome" placeholder="Seu nome:" required class="scroll-input1">
 
-                    <input type="email" name="email" id="idnemail" placeholder="Seu e-mail:" required>
+                    <input type="email" name="email" id="idnemail" placeholder="Seu e-mail:" required class="scroll-input2">
 
-                    <input type="tel" name="celular" id="idcelular" placeholder="Seu número de celular:" title="Digite um número com até 11 dígitos">
+                    <input type="tel" name="celular" id="idcelular" placeholder="Seu número de celular:" title="Digite um número com até 11 dígitos" class="scroll-input3">
 
-                    <textarea name="mensagem" id="idtextbox" placeholder="Sua mensagem:" required></textarea>
+                    <textarea name="mensagem" id="idtextbox" placeholder="Sua mensagem:" required class="scroll-input4"></textarea>
 
-                    <div class="botao-enviar">
-                        <input type="submit" value="ENVIAR">
+                    <div class="botao-enviar scroll-input5">
+                        <input type="submit" value="ENVIAR" >
                     </div>
                 </form>
                
@@ -199,9 +201,9 @@
                     </div><!-- FIM | logo-rodape -->
 
                     <div class="botao-social">
-                        <a href="https://www.linkedin.com/in/lvitor1001/" target="_blank"><button id="linkedin"><i class="bi bi-linkedin"></i></i></button></a>
-                        <a href="https://github.com/Lvitor1002?tab=repositories" target="_blank"><button id="github"><i class="bi bi-github"></i></button></a>
-                        <a href="https://www.youtube.com/@Lvitor1001" target="_blank"><button id="youtube"><i class="bi bi-youtube"></i></button></a>
+                        <a href="https://www.linkedin.com/in/lvitor1001/" target="_blank"><button id="linkedin"><i class="bi bi-linkedin scroll-a1"></i></i></button></a>
+                        <a href="https://github.com/Lvitor1002?tab=repositories" target="_blank"><button id="github"><i class="bi bi-github scroll-a2"></i></button></a>
+                        <a href="https://www.youtube.com/@Lvitor1001" target="_blank"><button id="youtube"><i class="bi bi-youtube scroll-a3"></i></button></a>
                     </div><!-- FIM | botao-social -->
                 </div><!-- FIM | flex -->
             </div><!-- FIM | linha-rodape -->
@@ -209,7 +211,7 @@
             <div class="linha-rodape-borda">
                 
 
-                <p><i class="bi bi-envelope-at-fill"></i><a href="mailto:luizpierino@hotmail.com" target="_blank"> luizpierino@hotmail.com</a></p><!-- Abre o app de email -->
+                <p class="scroll-email"><i class="bi bi-envelope-at-fill "></i><a href="mailto:luizpierino@hotmail.com" target="_blank" > luizpierino@hotmail.com</a></p><!-- Abre o app de email -->
                 
                 <p id="copyright">"Site criado por <a href="https://github.com/Lvitor1002?tab=repositories" target="_blank">LVitor"</a></p>
                 
@@ -218,10 +220,12 @@
     </footer>
 
     <script>
+        //Quando a [LOGO] do cabeçalho for clicado retorna ao início da página
         document.querySelector(".logo").addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });
 
+        //Quando a [LOGO] do rodapé for clicado retorna ao início da página
         document.querySelector(".logo-rodape").addEventListener("click", function () {
             window.scrollTo({ top: 0, behavior: "smooth" });
         });

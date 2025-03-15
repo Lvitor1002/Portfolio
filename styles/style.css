@@ -10,6 +10,34 @@
     
 */
 
+/*      Rolagem scroll          */
+.efeito-scroll-texto-topo,
+.efeito-scroll-img-topo,
+.efeito-scroll-texto-topo2,
+.efeito-scroll-texto-topo3,
+.especialidades-scroll1,
+.especialidades-scroll2
+.especialidades-scroll11,
+.especialidades-scroll22,
+.especialidades-scroll111,
+.especialidades-scroll222,
+.scroll-img-sobre,
+.scroll-titulo,
+.scroll-texto,
+.scroll-a1,
+.scroll-a2,
+.scroll-a3
+.scroll-prog,
+.scroll-titulo-form,
+.scroll-input1,
+.scroll-input2,
+.scroll-input3,
+.scroll-input4,
+.scroll-input5,
+.scroll-email
+{
+    visibility: hidden;
+}
 
 
 /* ESTILO [GERAL] */
@@ -37,6 +65,7 @@ body{
     display: flex;
     background-color: rgb(0, 0, 0);
 }
+
 .botao-contato button{
     padding: 10px 50px;/*10px em cima e em baixo e 40px dos lados*/
 
