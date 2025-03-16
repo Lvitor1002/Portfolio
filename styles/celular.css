@@ -3,9 +3,10 @@
 
 @media screen and (max-width: 615px){
      /* ESTILO [GERAL] */
-
     .flex{ 
         flex-direction: column;
+        justify-content: center;
+        
     }
     .topo-conteudo .flex { 
         flex-direction: column-reverse;
@@ -14,7 +15,7 @@
         font-size: 28px;
         text-align: center;
     }
-
+   
     
 
    
@@ -47,6 +48,7 @@
         padding: 0;
         display: block;
         width: 105px;
+        
     }
     #contato{
         display: block;
