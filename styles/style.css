@@ -216,9 +216,11 @@ section.topo-conteudo .flex{
 
 section.especialidades{
     padding: 85px 4%;
+    
 }
 section.especialidades .flex{
     gap: 60px;
+    
 }
 .especialidades .especialidades-box {
     background-color: black;
@@ -226,6 +228,8 @@ section.especialidades .flex{
     padding: 40px;
     border-radius: 50px;
     transition: all 2s;
+    width: 380px;
+    
    
 }
 .especialidades .especialidades-box:hover {
@@ -237,6 +241,7 @@ section.especialidades .flex{
     width: 100px;
     text-align: center;
     height: auto;
+    
     border-radius: 50px;
     filter: invert(12%) sepia(100%) saturate(500%) hue-rotate(-20deg); /*inverte o fundo*/
 
@@ -255,6 +260,7 @@ section.especialidades .flex{
 .especialidades .especialidades-box p{
     text-align: justify;
     line-height: 25px;
+    
     
 }
 
@@ -362,8 +368,10 @@ section.portfolio{
     
 }
 section.portfolio .flex{
-    /*gap: 80px;*/ justify-content: space-evenly;
+    /*gap: 80px;*/ 
+    justify-content: space-evenly;
     flex-flow: wrap; /*Para quebrar na linha de baixo*/
+    
     
 }
 
