@@ -1,6 +1,6 @@
 
 //Voltanto a visibilidade
-window.voltarVisibilidade = ScrollReveal({reset:true})
+window.voltarVisibilidade = ScrollReveal({reset:false})
 
 //------------------Transformando ideias em código, e código em soluções.------------------------
 
