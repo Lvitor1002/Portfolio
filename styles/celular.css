@@ -229,10 +229,11 @@
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
     }
-    .menu-desktop{
-
+    .mobile-menu{
         overflow-x: hidden; /* Remove a rolagem lateral */
+
     }
+
     .mobile-menu {
 
         left: 15%;
