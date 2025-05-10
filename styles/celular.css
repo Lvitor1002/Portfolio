@@ -83,7 +83,7 @@
     }
     
     .nav-list.active {
-        transform: translateX(0);
+        /* transform: translateX(0); */
         right: 0;
 
     }
