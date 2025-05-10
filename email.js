@@ -1,15 +1,91 @@
-document.addEventListener("DOMContentLoaded", function () {
-    document.getElementById("form-contato").addEventListener("submit", function (event) {
-        event.preventDefault(); // Evita o envio padrão do formulário
 
-        let nome = document.getElementById("idnome").value;
-        let email = document.getElementById("idnemail").value;
-        let mensagem = document.getElementById("idmensagem").value;
+const formulario = document.querySelector(".form")
 
-        // Criando o link mailto
-        let mailtoLink = `mailto:luizpierino@hotmail.com?subject=Contato de ${nome}&body=Nome: ${nome}%0AEmail: ${email}%0AMensagem: ${mensagem}`;
+formulario.addEventListener("submit",function(evento){
 
-        // Abrindo o link no cliente de e-mail padrão do usuário
-        window.location.href = mailtoLink;
-    });
-});
+    evento.preventDefault(); // evita o envio do formulário até a validação passar
+
+    let formularioValido = true 
+
+    const nome = formulario.elements["nome"].value.trim(); 
+    const tel = formulario.elements["celular"].value.trim(); 
+    const email = formulario.elements["email"].value.trim(); 
+    const mensagem = formulario.elements["mensagem"].value.trim(); 
+    
+    const campoNome = formulario.elements["nome"]; 
+    const campoTelefone = formulario.elements["celular"]; 
+    const campoEmail = formulario.elements["email"]; 
+    const campoMensagem = formulario.elements["mensagem"]; 
+
+    campoNome.style.border = ""
+    campoTelefone.style.border = ""
+    campoEmail.style.border = ""
+    campoMensagem.style.border = ""
+
+    if (nome === "" || !/^[A-Za-zÀ-ÿ\s]+$/.test(nome)) {
+
+        formularioValido = false;
+
+        alert("Por gentileza, digite um nome válido (somente letras).");
+        campoNome.style.border = "2px solid red"
+    }
+    
+    if (email === "" || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        
+        formularioValido = false;
+    
+        alert("Por gentileza, digite um email válido.\nExemplo: usuario@dominio.com");
+        campoEmail.style.border = "2px solid red";
+    }
+    
+
+    if (mensagem === "") {
+
+        formularioValido = false;
+
+        alert("Por gentileza, escreva sua mensagem.");
+        campoMensagem.style.border = "2px solid red"
+    }
+
+    if (formularioValido) {
+        fetch("https://formsubmit.co/ajax/luizpierino@hotmail.com", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                'Nome do cliente': formulario.nome.value,
+                'Email do Cliente': formulario.email.value,
+                'Telefone do cliente': formulario.tel.value,
+                'Mensagem do cliente': formulario.mensagem.value
+            })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                Swal.fire({
+                    position: "center",
+                    icon: "success",
+                    title: "Mensagem enviada com sucesso.",
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+                formulario.reset(); // limpa o formulário
+            } else {
+                Swal.fire({
+                    position: "center",
+                    icon: "error",
+                    title: "Erro inesperado ao enviar formulário à API - " + data.message,
+                    showConfirmButton: false,
+                    timer: 1500
+                });
+            }
+        })
+        .catch(error => {
+            alert(error);
+        });
+    }
+    
+})
+
