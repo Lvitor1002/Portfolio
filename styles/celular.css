@@ -2,9 +2,7 @@
 /*tablet max 1020px*/
 
 @media screen and (max-width: 760px){
-    body{
-
-    }
+    
     .mobile-menu {
         display: block;
         color: #ff9900;
@@ -106,7 +104,7 @@
     .logo#logo-cabecalho-centro-celular img {
         width: 85px;
         display: block;
-        
+              
     }
     
     .menu-desktop {
@@ -114,6 +112,7 @@
         padding: 0;
         display: block;
         width: 105px;
+        
         
     }
     #contato{
@@ -198,6 +197,15 @@
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
 
+    }
+    .logo#logo-cabecalho-centro-celular img {
+        width: 85px;
+        
+        display: block;
+        position: relative;
+        left: 40%;
+        padding: 0;
+            
     }
 
 }
