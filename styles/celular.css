@@ -227,10 +227,10 @@
 
 @media screen and (max-width: 590px){
     body {
-        overflow-x: hidden; /* Remove a rolagem lateral */
+        overflow-x: hidden!important; /* Remove a rolagem lateral */
     }
     .mobile-menu{
-        overflow-x: hidden; /* Remove a rolagem lateral */
+        overflow-x: hidden!important; /* Remove a rolagem lateral */
 
     }
 
