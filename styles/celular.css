@@ -43,6 +43,8 @@
         transform: rotate(45deg) translate(-5px, -7px);
     }
     .nav-list{
+        overflow: hidden; 
+
         border-radius: 100px 0 0 100px;
         padding: 50px 0px;
         flex-direction: column;
