@@ -228,7 +228,7 @@
 @media screen and (max-width: 590px){
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
-
+        background-color: red;
     }
     .mobile-menu {
         left: 15%;
