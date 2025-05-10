@@ -6,7 +6,7 @@ class Menu {
       this.lista = document.querySelector(navList);
 
       this.links = document.querySelectorAll(navLinks);
-      this.ativarClasse = "ativar";
+      this.ativarClasse = "active";
   
       this.controle = this.controle.bind(this);
     }

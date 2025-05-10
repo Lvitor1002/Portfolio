@@ -10,6 +10,23 @@
         position: relative;
         left: 15%;
     }
+    .mobile-menu div {
+        width: 32px;
+        height: 2px;
+        margin: 8px;
+        transition: 0.3s;
+    }
+    .mobile-menu.active .line1 {
+        transform: rotate(-45deg) translate(-8px, 8px);
+    }
+
+    .mobile-menu.active .line2 {
+        opacity: 0;
+    }
+
+    .mobile-menu.active .line3 {
+        transform: rotate(45deg) translate(-5px, -7px);
+    }
     .nav-list{
         border-radius: 100px 0 0 100px;
         padding: 50px 0px;
@@ -49,7 +66,7 @@
         display: block;
     }
     
-    .nav-list.ativar {
+    .nav-list.active {
         transform: translateX(0);
     }
 
