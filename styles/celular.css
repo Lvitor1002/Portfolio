@@ -1,6 +1,70 @@
 
 /*tablet max 1020px*/
 
+@media screen and (max-width: 760px){
+    
+    .mobile-menu {
+        display: block;
+        color: #ff9900;
+        font-size: 70px;
+        position: relative;
+        left: 15%;
+    }
+    .nav-list{
+        border-radius: 0 0 0 100px;
+        padding: 50px 10px;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 50px;
+        position: absolute;
+        /* opacity: 90%; */
+        top: 116px;
+        right: 0;
+        width: 42dvw;
+        height: 90dvh;
+
+        background-color:  rgb(255, 166, 0);
+        transform: translateX(100%);
+        z-index: 1;
+        transition: transform 0.3s ease-in;
+        
+    }
+    .nav-list li{
+        opacity: 0;
+        margin-left: 0;
+    }
+    .nav-list li a{
+        color: black;
+        width: 160px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .nav-list li a:hover{
+        color: orange;
+        background-color: rgba(0, 0, 0, 0.836);
+    }
+    
+    .menu-desktop {
+        display: block;
+    }
+    
+    .nav-list.ativar {
+        transform: translateX(0);
+    }
+
+    @keyframes efeitos {
+        from {
+          opacity: 0;
+          transform: translateX(50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+}
+
 @media screen and (max-width: 615px){
      /* ESTILO [GERAL] */
     .flex{ 
