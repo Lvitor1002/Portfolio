@@ -226,7 +226,7 @@
 }
 
 @media screen and (max-width: 590px){
-    header {
+    body {
         overflow-x: hidden!important; /* Remove a rolagem lateral */
     }
 
