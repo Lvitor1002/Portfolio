@@ -234,6 +234,9 @@
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
     }
+    .topo-conteudo {
+        overflow-x: hidden; /* Remove a rolagem lateral */
+    }
 
     .mobile-menu {
 
