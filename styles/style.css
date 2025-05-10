@@ -32,8 +32,11 @@ body{
     max-width: 1280px;
     margin: 0 auto; /*Centraliza no meio*/
     background-color: rgba(97, 97, 97, 0.342);
-    border-radius: 50px;
-    
+    border-radius: 50px;    
+}
+.interface .menu-desktop li a{
+    padding: 0 50px;
+
 }
 
 .flex{ /*Container PAI*/

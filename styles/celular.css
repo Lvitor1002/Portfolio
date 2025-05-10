@@ -1,14 +1,29 @@
 
 /*tablet max 1020px*/
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 1300px){
+    .interface .menu-desktop li a{
+        padding: 0 30px;
+    }
+}
+@media screen and (max-width: 1112px){
+    .interface .menu-desktop li a{
+        padding: 0 20px;
+    }
+}
+@media screen and (max-width: 1030px){
+    .interface .menu-desktop li a{
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 850px){
     
     .mobile-menu {
         display: block;
         color: #ff9900;
         font-size: 70px;
         position: relative;
-        left: 15%;
+        left: 35%;
     }
     .mobile-menu div {
         width: 32px;
@@ -214,6 +229,9 @@
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
 
+    }
+    .mobile-menu {
+        left: 15%;
     }
     .logo#logo-cabecalho-centro-celular img {
         width: 85px;
