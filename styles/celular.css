@@ -228,9 +228,10 @@
 @media screen and (max-width: 590px){
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
-        background-color: red;
     }
     .mobile-menu {
+        overflow-x: hidden; /* Remove a rolagem lateral */
+
         left: 15%;
     }
     .logo#logo-cabecalho-centro-celular img {
