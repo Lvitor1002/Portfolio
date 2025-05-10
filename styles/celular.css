@@ -52,7 +52,8 @@
         position: absolute;
         opacity: 97%;
         top: 116px;
-        right: 0;
+        right: -50dvw;
+        transform: translateX(0); 
         width: 50dvw;
         height: 80dvh;
 
@@ -83,6 +84,8 @@
     
     .nav-list.active {
         transform: translateX(0);
+        right: 0;
+
     }
 
     @keyframes efeitos {
