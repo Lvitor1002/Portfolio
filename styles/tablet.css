@@ -58,6 +58,14 @@
     }
     
 }
+@media screen and (max-width: 500px){
+
+    body{
+        overflow-x: hidden; /* Remove a rolagem lateral */
+
+    }
+
+}
     
 
     
