@@ -85,7 +85,7 @@
     }
     
     .nav-list.active {
-        /* transform: translateX(0); */
+        transform: translateX(0);
         right: 0;
 
     }
@@ -232,7 +232,7 @@
 
 @media screen and (max-width: 590px){
     body {
-        overflow-x: hidden!important; /* Remove a rolagem lateral */
+        overflow-x: hidden; /* Remove a rolagem lateral */
     }
 
     .mobile-menu {
