@@ -13,17 +13,17 @@
         left: 15%;
     }
     .nav-list{
-        border-radius: 0 0 0 100px;
-        padding: 50px 10px;
+        border-radius: 100px 0 0 100px;
+        padding: 50px 0px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 35px;
         position: absolute;
-        /* opacity: 90%; */
+        opacity: 97%;
         top: 116px;
         right: 0;
-        width: 46dvw;
+        width: 50dvw;
         height: 80dvh;
 
         background-color:  rgb(255, 166, 0);
