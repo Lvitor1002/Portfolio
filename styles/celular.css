@@ -229,10 +229,6 @@
     header {
         overflow-x: hidden!important; /* Remove a rolagem lateral */
     }
-    .mobile-menu{
-        overflow-x: hidden!important; /* Remove a rolagem lateral */
-
-    }
 
     .mobile-menu {
 
