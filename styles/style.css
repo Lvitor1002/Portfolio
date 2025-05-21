@@ -126,7 +126,6 @@ header a {
 }
 header a:hover {
     color: rgb(255, 255, 255);
-    transform: scale(1.05);
     transition-duration: .1s;
 }
 header nav ul{
@@ -147,7 +146,6 @@ header > .interface{ /*Container PAI*/
     height: auto; /* Mantém a proporção */
     border-radius: 50%;
     border: 2px solid rgb(255, 255, 255);
-
     transition: all 3s;
 }
 
