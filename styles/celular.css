@@ -54,7 +54,7 @@
         position: absolute;
         opacity: 97%;
         top: 116px;
-        right: 0dvw;
+        right: .5px;
         transform: translateX(0); 
         width: 50dvw;
         height: 80dvh;
