@@ -238,9 +238,7 @@
     body {
         overflow-x: hidden; /* Remove a rolagem lateral */
     }
-    .topo-conteudo {
-        overflow-x: hidden; /* Remove a rolagem lateral */
-    }
+    
 
     .mobile-menu {
 
@@ -255,17 +253,5 @@
         padding: 0;
             
     }
-
-}
-@media screen and (max-width: 490px){
-    body {
-        overflow-x: hidden!important; /* Remove a rolagem lateral */
-    }
-    .nav-list{
-        overflow-x: hidden!important; 
-
-        
-    }
-    
 
 }
