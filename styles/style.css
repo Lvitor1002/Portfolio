@@ -609,10 +609,7 @@ footer .linha-rodape p a:hover{
     cursor: pointer;
     transition: all 2s;
 }
-.logo-rodape img:hover{
-    transform: scale(1.10);
-    transition-duration: 1s;
-}
+
 
 .linha-rodape p#copyright {
     color: rgba(255, 255, 255, 0.459);
