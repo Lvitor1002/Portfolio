@@ -238,9 +238,6 @@
         overflow-x: hidden; /* Remove a rolagem lateral */
     }
 
-    .nav-list{
-        overflow-x: hidden; 
-    }
     .mobile-menu {
 
         left: 15%;
@@ -254,5 +251,12 @@
         padding: 0;
             
     }
+
+}
+@media screen and (max-width: 490px){
+    body {
+        overflow-x: hidden!important; /* Remove a rolagem lateral */
+    }
+    
 
 }
