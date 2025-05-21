@@ -44,28 +44,34 @@
     .mobile-menu.active .line3 {
         transform: rotate(45deg) translate(-5px, -7px);
     }
-    .nav-list{
-   
-        overflow-x: hidden;
-
+    .nav-list {
+        /* Mantenha suas propriedades existentes */
         border-radius: 100px 0 0 100px;
         padding: 50px 0px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
         gap: 35px;
-        position: absolute;
+        position: fixed; /* Alterado de absolute para fixed */
         opacity: 97%;
         top: 116px;
-        right: .5px;
+        right: 0;
         width: 50dvw;
         height: 380px;
-
-        background-color:  rgb(255, 166, 0);
-        transform: translateX(100%);
+        background-color: rgb(255, 166, 0);
+        transform: translateX(100%); /* Mantém o menu totalmente fora da tela */
         z-index: 1;
         transition: transform 0.3s ease-in;
         
+        /* Novas propriedades adicionadas */
+        overflow-y: auto; /* Permite rolagem vertical se necessário */
+        overscroll-behavior: contain; /* Previne scroll fantasma no mobile */
+        -webkit-overflow-scrolling: touch; /* Scroll suave em iOS */
+    }
+
+    .nav-list.active {
+        transform: translateX(0); /* Traz o menu para a tela */
+        /* right: 0; */
     }
     .nav-list li{
         opacity: 0;
@@ -86,11 +92,7 @@
         display: block;
     }
     
-    .nav-list.active {
-        transform: translateX(0);
-        right: 0;
-
-    }
+    
 
     @keyframes efeitos {
         from {
