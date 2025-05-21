@@ -150,10 +150,7 @@ header > .interface{ /*Container PAI*/
 
     transition: all 3s;
 }
-.logo img:hover {
-    box-shadow: 0px 0px 50px 0px #ff5100;
-    transition-duration: 4s;
-}
+
 #contato{
     display: none;
 }
