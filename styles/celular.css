@@ -17,7 +17,9 @@
     }
 }
 @media screen and (max-width: 850px){
-    
+    body {
+        overflow-x: hidden;
+    }
     .mobile-menu {
         display: block;
         color: #ff9900;
@@ -44,6 +46,7 @@
     }
     .nav-list{
    
+        overflow-x: hidden;
 
         border-radius: 100px 0 0 100px;
         padding: 50px 0px;
@@ -55,7 +58,6 @@
         opacity: 97%;
         top: 116px;
         right: .5px;
-        transform: translateX(0); 
         width: 50dvw;
         height: 80dvh;
 
