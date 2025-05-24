@@ -85,7 +85,7 @@
         
     }
     .nav-list.active li {
-        animation: efeitos 0.8s ease forwards;
+        animation: efeitos 1s ease forwards;
     }
     .nav-list li {
         opacity: 1 !important; /* Sobrescreve qualquer opacidade inline */
