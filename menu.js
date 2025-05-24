@@ -17,6 +17,12 @@ class Menu {
         
         link.style.animation ? (link.style.animation = "") : (link.style.animation = `efeitos 0.8s ease forwards ${i / 7 + 0.3}s`);
       });
+    
+      if (this.lista.classList.contains(this.ativarClasse)) {
+        document.body.classList.add('no-scroll');
+      } else {
+          document.body.classList.remove('no-scroll');
+      }
     }
   
     controle() {
