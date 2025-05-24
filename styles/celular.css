@@ -20,6 +20,11 @@
     body {
         overflow-x: hidden;
     }
+    .logo#logo-cabecalho-centro-celular img {
+        z-index: 3;
+              
+    }
+    
     .mobile-menu {
         display: block;
         color: #ff9900;
