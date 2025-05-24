@@ -63,7 +63,7 @@
         transition: transform 0.3s ease-in;
         
         /* Novas propriedades adicionadas */
-        overflow-y: auto; /* Permite rolagem vertical se necessário */
+        overflow-y: none; /* Permite rolagem vertical se necessário */
         overscroll-behavior: contain; /* Previne scroll fantasma no mobile */
         -webkit-overflow-scrolling: touch; /* Scroll suave em iOS */
     }
