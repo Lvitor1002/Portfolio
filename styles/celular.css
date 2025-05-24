@@ -52,7 +52,7 @@
         justify-content: flex-start;
         align-items: flex-start;
         gap: 35px;
-        position: absolute; /* Alterado de absolute para fixed */
+        position: fixed; /* Alterado de absolute para fixed */
         opacity: 97%;
         top: 116px;
         right: 0;
