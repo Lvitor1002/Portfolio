@@ -26,6 +26,7 @@
         font-size: 70px;
         position: relative;
         left: 35%;
+        z-index: 3;
     }
     .mobile-menu div {
         width: 32px;
@@ -52,18 +53,18 @@
         align-items: flex-start;
         gap: 35px;
         position: fixed; /* Alterado de absolute para fixed */
-        opacity: 95%;
-        top: 150px;
+        opacity: 100%;
+        bottom: -1px;
         right: 0;
         width: 100%;
         height: 100%;
         background-color: rgb(255, 166, 0);
         transform: translateX(100%); /* Mantém o menu totalmente fora da tela */
-        z-index: 1;
+        z-index: 2;
         transition: transform 0.3s ease-in;
         
         /* Novas propriedades adicionadas */
-        overflow-y: none; /* Permite rolagem vertical se necessário */
+        overflow-y: auto; /* Permite rolagem vertical se necessário */
         overscroll-behavior: contain; /* Previne scroll fantasma no mobile */
         -webkit-overflow-scrolling: touch; /* Scroll suave em iOS */
     }
