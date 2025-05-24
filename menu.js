@@ -20,41 +20,34 @@ class Menu {
     }
 
     animacaoLinks() {
-
-      this.links.forEach((link, i) => {
-        
-        link.style.animation ? (link.style.animation = "") : (link.style.animation = `efeitos 0.8s ease forwards ${i / 7 + 0.3}s`);
-      })
-      
+        this.links.forEach((link, i) => {
+            // Reinicia a animação a cada abertura
+            link.style.animation = `efeitos 0.8s ease forwards ${i / 7 + 0.3}s`;
+        });
     }
   
     controle() {
-
-      this.lista.classList.toggle(this.ativarClasse);
-
-      this.menu.classList.toggle(this.ativarClasse);
-      
-      this.animacaoLinks();
-
-      if (this.lista.classList.contains(this.ativarClasse)) {
-        document.body.classList.add('no-scroll');
-      } else {
-          document.body.classList.remove('no-scroll');
-      }
-      
+        this.lista.classList.toggle(this.ativarClasse);
+        this.menu.classList.toggle(this.ativarClasse);
+        
+        if (this.lista.classList.contains(this.ativarClasse)) {
+            this.animacaoLinks();
+            document.body.classList.add('no-scroll');
+        } else {
+            document.body.classList.remove('no-scroll');
+        }
     }
   
     
     fecharMenu() {
-      this.lista.classList.remove(this.ativarClasse);
-      this.menu.classList.remove(this.ativarClasse);
-      document.body.classList.remove('no-scroll');
-      
-      // Restaurar posição do scroll
-      if (document.body.style.top) {
-        window.scrollTo(0, parseInt(document.body.style.top || '0') * -1);
-        document.body.style.top = '';
-      }
+        this.lista.classList.remove(this.ativarClasse);
+        this.menu.classList.remove(this.ativarClasse);
+        document.body.classList.remove('no-scroll');
+        
+        // Força a reinicialização da animação
+        this.links.forEach(link => {
+            link.style.animation = '';
+        });
     }
     
     eventoClick() {
