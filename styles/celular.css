@@ -48,6 +48,7 @@
     .nav-list {
         /* Mantenha suas propriedades existentes */
         padding: 50px 0px;
+        padding-top: 150px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
