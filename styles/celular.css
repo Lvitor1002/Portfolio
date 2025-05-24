@@ -84,13 +84,9 @@
         transform: translateX(0); /* Traz o menu para a tela */
         
     }
-    .nav-list.active li {
-        animation: efeitos 1s ease forwards;
-    }
-    .nav-list li {
-        opacity: 1 !important; /* Sobrescreve qualquer opacidade inline */
-        transform: none !important;
-        z-index: 4; /* Garante que os itens fiquem acima do menu */
+    .nav-list li{
+        opacity: 0;
+        margin-left: 0;
     }
     .nav-list li a{
         color: black;
